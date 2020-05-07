@@ -10,6 +10,8 @@ and `Month` = '2'
 and `LargeCat` = 'Mouse'
 and `MediumCat` = 'Wireless Mouse'
 and `Description` = 'OBM'
+left join  genius_data.genius_data_202002 as d
+where `Department` in('SF4','SF5')
 ;
 
 /*
