@@ -10,11 +10,10 @@ and `Month` = '2'
 and `LargeCat` = 'Mouse'
 and `MediumCat` = 'Wireless Mouse'
 and `Description` = 'OBM'
-left join  genius_data.genius_data_202002 as d
-where `Department` in('SF4','SF5')
+and `Department` in('SF4','SF5')
 ;
 
-/*
+/*deallocate
 FROM genius_data.genius_data_202002 as d
 where `Department` in('SF4','SF5')
 and `Year` = '2020'
@@ -23,6 +22,7 @@ and `LargeCat` = 'Mouse'
 and `MediumCat` = 'Wireless Mouse'
 and `Description` = 'OBM'
 /*
+
 /*
 `Order Number`, `Department`,
 `Continent, Country`,
