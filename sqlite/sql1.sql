@@ -5,4 +5,3 @@ AND Year = 2020
 AND Month = 4
 AND QuantityShipped > 1000
 AND ExchangeRate > 30
-AND ForeignUnitPrice = 2.2
