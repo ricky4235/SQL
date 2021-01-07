@@ -1,7 +1,6 @@
 SELECT *
-FROM "201601-202004" as Apr
+FROM "201701-202005" as Apr
 WHERE LargeCat = "Mouse"
 AND Year = 2020
-AND Month = 4
-AND QuantityShipped > 1000
-AND ExchangeRate > 30
+AND Month = 5
+AND Quantity > 1000

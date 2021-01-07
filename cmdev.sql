@@ -90,8 +90,8 @@ CREATE TABLE numerictable (
 CREATE TABLE numerictable2 (
   i  TINYINT(3),
   i2 SMALLINT(3),
-  i3 MEDIUMINT(3), 
-  i4 INT(3), 
+  i3 MEDIUMINT(3),
+  i4 INT(3),
   i5 BIGINT(3),
   f  FLOAT(5, 2),
   f2 DOUBLE(5, 2),
@@ -101,12 +101,13 @@ CREATE TABLE numerictable2 (
 CREATE TABLE numerictable3 (
   i  TINYINT(3) UNSIGNED ZEROFILL,
   i2 SMALLINT(4) UNSIGNED ZEROFILL,
-  i3 MEDIUMINT(5) UNSIGNED ZEROFILL, 
-  i4 INT(6) UNSIGNED ZEROFILL, 
+  i3 MEDIUMINT(5) UNSIGNED ZEROFILL,
+  i4 INT(6) UNSIGNED ZEROFILL,
   i5 BIGINT(7) UNSIGNED ZEROFILL,
   f  FLOAT(5, 2) UNSIGNED ZEROFILL,
   f2 DOUBLE(7, 3) UNSIGNED ZEROFILL,
-  f3 DECIMAL(9, 5) UNSIGNED ZEROFILL
+  f3 DECIMAL(9, 5) UNSIGNED ZEROFILL,
+  d6 DECIMAL(9, 5) UNSIGNED ZEROFILL
 );
 
 CREATE TABLE bittable (
@@ -122,6 +123,7 @@ CREATE TABLE nonbinarytable (
 
 CREATE TABLE nonbinarytable2 (
   s  VARCHAR(6) CHARACTER SET latin1,
+  ss varchar(8) character set cp1256,
   s2 VARCHAR(6) CHARACTER SET big5,
   s3 VARCHAR(6) CHARACTER SET utf8
 );
@@ -142,6 +144,9 @@ CREATE TABLE nonbinarytable3 (
   s  VARCHAR(20) CHARACTER SET latin1 COLLATE latin1_general_ci,
   s2 VARCHAR(20) CHARACTER SET latin1 COLLATE latin1_general_cs
 );
+
+
+
 
 INSERT INTO cmdev.nonbinarytable3
 VALUES (1, 'aaa', 'aaa'),(2, 'AAA', 'AAA'),
@@ -205,6 +210,7 @@ CREATE TABLE emplog (
   message varchar(64),
   PRIMARY KEY logno (logno)
 );
+
 
 CREATE TABLE debug (
   fint TINYINT NOT NULL,
